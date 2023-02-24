@@ -1,5 +1,4 @@
-# ChatGPT Universe
-
+# ChatGPT Complete Guide
 This tiny place of the Web stores a growing collection of interesting things
 about [ChatGPT](https://en.wikipedia.org/wiki/ChatGPT) and GPT-3 from OpenAI.
 
@@ -27,6 +26,11 @@ own modifications:
 - [OpenAI Discord Channel](https://discord.com/invite/openai)
 - [How ChatGPT actually works](https://archive.ph/f3WW2), explained using simple words.
 - [Reddit /r/ChatGPT](https://old.reddit.com/r/ChatGPT/)
+- [Facebook Group](https://www.facebook.com/groups/1392514294904889)
+- [Wechat Group]
+
+## Video Guides
+- [A curated list of youtube videos on the topic of ChatGPT](https://bit.ly/learn-chatgpt)
 
 ## Examples
 
