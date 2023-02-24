@@ -28,6 +28,8 @@ own modifications:
 - [Reddit /r/ChatGPT](https://old.reddit.com/r/ChatGPT/)
 - [Facebook Group](https://www.facebook.com/groups/1392514294904889)
 - [Wechat Group]
+<img src="https://github.com/ouabout/chatgpt-complete-guide/blob/main/images/chatgpt-wxgroup.jpg" alt="Wechat Group" title="Wechat Group">
+
 
 ## Video Guides
 - [A curated list of youtube videos on the topic of ChatGPT](https://bit.ly/learn-chatgpt)
