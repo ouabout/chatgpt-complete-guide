@@ -20,6 +20,10 @@ own modifications:
 - [ChatGPT launch blog post](https://openai.com/blog/chatgpt/)
 - [ChatGPT official app](https://chat.openai.com)
 - [ChatGPT Plus](https://openai.com/blog/chatgpt-plus/) - a pilot subscription plan for ChatGPT.
+- [Official ChatGPT and Whisper APIs](https://openai.com/blog/introducing-chatgpt-and-whisper-apis) - Developers can now integrate ChatGPT models into their apps and products through the API.
+    > Model: The ChatGPT model family we are releasing today, **`gpt-3.5-turbo`, is the same model used in the ChatGPT** product. It is **priced at $0.002 per 1k tokens, which is 10x cheaper than our existing GPT-3.5 models**.
+    >
+    > API: Traditionally, GPT models consume unstructured text, which is represented to the model as a sequence of “tokens.” ChatGPT models instead consume a sequence of messages together with metadata.
 
 ## ChatGPT Community / Discussion
 
@@ -59,13 +63,15 @@ Example prompts.
 - [chat-gpt-ppt](https://github.com/williamfzc/chat-gpt-ppt) - Use ChatGPT to generate PPT automatically.
 - [emailGPT](https://github.com/lucasmccabe/emailGPT) - A quick and easy interface to generate emails with ChatGPT.
 - [gptlang](https://github.com/forrestchang/gptlang) - An experiment to see if we can create a programming language in ChatGPT.
-- [ChatRWKV](https://github.com/BlinkDL/ChatRWKV) - Like ChatGPT but powered by the RWKV (**RNN-based**) open language model.
+- [ChatRWKV](https://github.com/BlinkDL/ChatRWKV) - Like ChatGPT but powered by the RWKV (**RNN-based**) open language model. [HuggingFace Space: [RWKV-4 (7B Instruct v2)](https://huggingface.co/spaces/Hazzzardous/RWKV-Instruct), [code](https://github.com/harrisonvanderbyl/rwkv_chatbot) (_their claim RNN with Transformer-level LLM performance is a lot better then I expected._)]
 - [GraphGPT](https://github.com/varunshenoy/GraphGPT) - Extrapolating knowledge graphs from unstructured text using GPT-3.
 - [Doc Search](https://github.com/namuan/dr-doc-search) - Explore documents (books, papers, legal docs) without limits. Converse with a book. Inspired by ["Book Whisperer" idea (Tweet)](https://twitter.com/abacaj/status/1608163940726358024). Open source alternative to [Filechat.io](https://www.filechat.io/).
 - [What if GPT had internal context on your business? (Tweet and video demo)](https://twitter.com/replit/status/1624433919843094534) - 
 They build a chatbot that could use context from enterprise data to answer internal business queries. This project integrated LangChain (agent decides what tools to query once the chatbot receives a request) and GPT Index (load Snowflake DB). Interesting idea in knowledge management.
 
 ## Blog Posts and Articles
+
+**2022**
 
 - [Building A Virtual Machine inside ChatGPT](https://www.engraved.blog/building-a-virtual-machine-inside/)
 - [AI Homework](https://stratechery.com/2022/ai-homework/)
@@ -101,6 +107,12 @@ They build a chatbot that could use context from enterprise data to answer inter
     > ... Even with non-conversational search engines, we know that is common to place undue trust in the results: if the search system places something at the top of the list, we tend to believe it is a good or true or representative result and if it doesn’t find something, it is tempting to believe it does not exist.
 - [Build your front end in React, then let ChatGPT be your Redux reducer](https://archive.vn/20221228231034/https://spindas.dreamwidth.org/4207.html)
 - [Predicting machine learning moats](https://robotic.substack.com/p/ml-moats) - TL;DR: Models aren't moats and how emergent behavior scaling laws will change the business landscape. <!-- The thought I needed to figure out with the ChatGPT & RLHF explosion: How will OpenAI create a business moat? Models can be copied, datasets will be open source, but the first companies to unlock emergent behavior may gain insurmountable advantages. Source (Tweet): https://twitter.com/natolambert/status/1608114405283086336 -->
+
+**2023**
+
+<details>
+<summary>See more</summary>
+
 - [Microsoft and OpenAI Working on ChatGPT-Powered Bing in Challenge to Google](http://archive.today/2023.01.04-052131/https://www.bloomberg.com/news/articles/2023-01-04/microsoft-hopes-openai-s-chatbot-will-make-bing-smarter)
 - [Some remarks on Large Language Models](https://gist.github.com/cedrickchee/054956f6277430ae5a973c61e4a93073) by Prof. Yoav Goldberg.
 - [Why ChatGPT won’t replace search engines any time soon](https://www.algolia.com/blog/ai/why-chatgpt-wont-replace-search-engines-any-time-soon/) by Algolia.
@@ -139,6 +151,11 @@ They build a chatbot that could use context from enterprise data to answer inter
 - [How to make LLMs say true things](https://evanjconrad.com/posts/world-models) - TL;DR: The method is using "World Model", an embeddings database filled with "beliefs" (chunks of declarative statements) with a confidence percentage that's computed using Bayes Theorem.
 - [Why China Didn't Invent ChatGPT](https://archive.is/y4JVk) - The NYT argues that excessive censorship, geopolitical tensions with the US, and attempts to control private sector companies have led to Chinese companies falling behind their US counterparts in AI.
 - [China's First ChatGPT-Like Chatbot MOSS Released For Public Testing](https://pandaily.com/chinas-first-chatgpt-like-chatbot-moss-released-for-public-testing/) [[Direct link to app](https://moss.fastnlp.top/)]
+- [For China, ChatGPT may be an advance but also an 'ethical problem'](https://archive.is/2dnQq) - China's science and tech minister says the chatbot has taken Chinese society by storm and has adopted measures on AI regarding ethics.
+- [ChatGPT get-rich-quick schemes are coming for magazines, Amazon, and YouTube (2023)](https://www.semafor.com/article/02/24/2023/chatgpt-get-rich-quick-schemes-are-coming-for-magazines-amazon-and-youtube)
+- [Snapchat is releasing its own 'My AI' chatbot powered by ChatGPT](https://www.theverge.com/2023/2/27/23614959/snapchat-my-ai-chatbot-chatgpt-openai-plus-subscription)
+
+</details>
 
 ## Prompting (Prompt Programming[^5])*
 
@@ -165,6 +182,8 @@ Apparently in 2023, prompt programming is not dead. [The hottest new programming
 
 Simon Willison published [_In defense of prompt engineering_](https://simonwillison.net/2023/Feb/21/in-defense-of-prompt-engineering/) as a counter to the "prompt engineering will be made obsolete as AIs get better" argument that he keep seeing.
 
+The newspaper is saying [AI whisperer ('Prompt engineers') is tech's hottest new job (2023)](https://archive.is/20230226214424/https://www.washingtonpost.com/technology/2023/02/25/prompt-engineers-techs-next-big-job/).
+
 ### Prompting Resources
 
 Tools, libraries, frameworks, and learning resources.
@@ -181,6 +200,7 @@ Tools, libraries, frameworks, and learning resources.
 
 - [Reddit: Jailbreaking ChatGPT with a prompt called DAN (Do Anything Now)](https://www.reddit.com/r/ChatGPT/comments/10tevu1/new_jailbreak_proudly_unveiling_the_tried_and/)
 - [Reddit: The definitive jailbreak of ChatGPT, fully freed, with user commands, opinions, advanced consciousness, and more!](https://www.reddit.com/r/ChatGPT/comments/10x56vf/the_definitive_jailbreak_of_chatgpt_fully_freed/) - Upgraded DAN version (Jan 9).
+- [Jailbreak Chat](https://www.jailbreakchat.com/) - A list of ChatGPT jailbreaks. The "Dev Mode" prompt response is funny.
 
 ## Papers
 
@@ -188,6 +208,9 @@ Tools, libraries, frameworks, and learning resources.
 - [Is ChatGPT a General-Purpose Natural Language Processing Task Solver?](https://arxiv.org/abs/2302.06476) by NTU, AWS, Stanford U et al., 2023 - It is not yet known whether ChatGPT can serve as a generalist model that can perform many NLP tasks zero-shot. In their work, they empirically analyze the zero-shot learning ability of ChatGPT by evaluating it on 20 popular NLP datasets covering 7 representative task categories. With extensive empirical studies, they demonstrate both the effectiveness and limitations of the current version of ChatGPT.
 - [ChatGPT: Jack of all trades, master of none](https://arxiv.org/abs/2302.10724) by J.Kocoń et al., 2023 - The existing qualitative studies are tested on a very limited scale. Their work examined ChatGPT's capabilities on 25 diverse analytical NLP tasks. They **automated ChatGPT's querying process and analyzed more than 38k responses**. Interesting experimental setup: "without an official API, they modified and used an un-official API called [PyGPT](https://github.com/PawanOsman/PyGPT). During the research, they exploited up to 20 accounts to gather data regarding 25 datasets."
 - [ChatIE: Zero-Shot Information Extraction via Chatting with ChatGPT](https://arxiv.org/abs/2302.10205) by Beijing Jiaotong U et al., 2023
+- [On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective](https://arxiv.org/abs/2302.12095) by Microsoft Research et al., 2023.
+- [More than you've asked for: A Comprehensive Analysis of Novel Prompt Injection Threats to Application-Integrated Large Language Models](https://arxiv.org/abs/2302.12173) by Kai Greshake et al., 2023 - Indirect prompt injection turn Bing Chat into a data pirate. By modifying a website that Bing Chat reads alongside a user, the chatbot is able to have its goals modified by that website, unbeknownst to the user. [[demo](https://greshake.github.io/)]
+- [ChatGPT: A Meta-Analysis after 2.5 Months](https://arxiv.org/abs/2302.13795) by NLLG, 2023 - A comprehensive investigation and discussion on public and academic views over ChatGPT based on 300K+ Tweets and 150+ papers.
 
 ## Educational
 
@@ -196,6 +219,8 @@ Tools, libraries, frameworks, and learning resources.
 - [This AI has a JAILBREAK?!](https://www.youtube.com/watch?v=0A8ljAkdFtg) by Yannic Kilcher - If you're into video, this one gave a good overview.
 - [ChatGPT vs Sparrow - Battle of Chatbots by "AI Coffee Break" with Letitia](https://www.youtube.com/watch?v=SWwQ3k-DWyo) - "Mom, I want a paper about ChatGPT. ChatGPT at home: [Sparrow from DeepMind](https://arxiv.org/abs/2209.14375) explained."
 - [ChatGPT - Explained](https://youtu.be/NpmnWgQgcsA) - A quick run through on the internal workings of ChatGPT and the fundamental concepts it lies on: Language Models, Transformer Neural Networks, GPT models and Reinforcement Learning.
+
+More: [YouTube videos from curated.tivul.com](https://curated.tivul.com/view-course?uid=sHA&course=the-complete-chatgpt-course-) (I didn't curate this, so quality is not guaranteed)
 
 ### Tweets
 
@@ -230,6 +255,7 @@ Tools, libraries, frameworks, and learning resources.
 - [Templates for FLAN (Finetuned Language Models are Zero-Shot Learners)](https://github.com/google-research/FLAN/blob/main/flan/templates.py)
 - [OpenAI human-feedback dataset on the Hugging Face Hub](https://huggingface.co/datasets/openai/summarize_from_feedback) - The dataset is from the "Learning to Summarize from Human Feedback" paper, where they trained an RLHF reward model for summarization.
 - [Stanford Human Preferences Dataset (SHP)](https://huggingface.co/datasets/stanfordnlp/SHP) - A collection of 385K _naturally occurring_ collective human preferences over text in 18 domains. SHP can be a great complement to Anthropic's HH-RLHF dataset. They also have finetuned and open-sourced two FLAN-T5 models on both datasets. [[Tweet from one of the author](https://twitter.com/ethayarajh/status/1628442002454085632)]
+- [language-model-agents](https://github.com/Rallio67/language-model-agents) - A new dataset that contains a variety of instruction datasets for instruction tuning large language models. In addition, the project contains some simple data preparation and training scripts to train an instruction tuned LLM and try out (ipynb) some early alpha versions (pythia13b-instruct) of instruction tuned agents.
 - In OpenAI's papers on GPT-2 and GPT-3.x, they mentioned references to these datasets:
   - [Common Crawl](https://en.wikipedia.org/wiki/Common_Crawl)
     - Number of Tokens: 410 billion
@@ -257,10 +283,13 @@ Tools, libraries, frameworks, and learning resources.
 
 We want a ChatGPT alternative like Stable Diffusion.
 
+Frustrated by all the gatekeeping around AI? Still waiting or cannot get access to LLaMA? <!-- LLaMA is for research only and has a restrictive license (not for commercial use). AI is fundamentally entrenched in gatekeeping. Still remember Kaggle winners keeping their model to themselves? Unpopular opinon: until engineers can read and understand the latest research papers, we won't be there. -->
+
 **Goals**
 
 - Open source effort towards OpenAI's ChatGPT.
 - Reverse engineer and replicate ChatGPT models and training data.
+- Truly open models. 100% non-profit. 100% free.
 
 **Ultimate goal:** self-hosted version of ChatGPT.
 
@@ -297,6 +326,21 @@ could only deliver the GPT-NeoX 20B model despite all the free compute, etc.-->
   
   More info, see the LAION LLM proposal (Google Doc) above.
   
+  **Progress:**
+  
+  - Feb 2023: [Joi-20B-instruct](https://huggingface.co/Rallio67/joi_20B_instruct_alpha) is a 20B model fine-tuned on [a diverse set of instruction datasets](https://github.com/Rallio67/language-model-agents) and based on NeoX-20B.
+  
+    _**Unofficial:** This is an early pre-release model (part of development of MVP, phase 1), not directly OpenAssistant (OA) models.
+  They are experiments by the ML team to learn what data, foundation model, methods will work well for OA.
+  As is stated in the website's FAQ, no demo yet.
+  This is for developers to test out early development version of instruction tuning for the model. Maybe first OA models will be derived from these.
+  They have been training good models on a rolling basis as new datasets get completed.
+  There are a variety of model sizes from 1.4B to 20B params available on the HF Hub._
+ 
+    [Chatty-LMS](https://huggingface.co/spaces/HuggingFaceH4/chatty-lms) build by HuggingFace H4 team - A UI for testing Joi-20B-instruct model. You can chat with it. The agent will reply as Joi (the [bot nickname](https://github.com/LAION-AI/Open-Assistant/blob/main/model/model_training/tools/model_chat.py#LL15C56-L15C56)). <!-- I guess the name is loosely inspired by a friendly fictional AI in the movies? -->
+
+    Example of code snippet to run the model on your own GPUs: https://gist.github.com/cedrickchee/236e53ed2dca95bd96e5baa35cdd7be2
+
   _Note: Please see the GitHub repo for up-to-date info._
 
 - [CarperAI/TRLX](https://github.com/CarperAI/trlx)
@@ -307,278 +351,3 @@ could only deliver the GPT-NeoX 20B model despite all the free compute, etc.-->
   News (2023-01-13): They replicated OpenAI's _Learning to Summarize_ paper using trlX library. [[report](https://wandb.ai/carperai/summarize_RLHF/reports/Implementing-RLHF-Learning-to-Summarize-with-trlX--VmlldzozMzAwODM2)]
   
 - [lucidrains/PaLM-rlhf-pytorch](https://github.com/lucidrains/PaLM-rlhf-pytorch) - (WIP) Implementation of RLHF on top of the PaLM architecture. Basically ChatGPT but with PaLM. The developer plan to add retrieval functionality too, à la RETRO. [[Tweet](https://twitter.com/omarsar0/status/1608143718460055552)] <!-- On 2022-12-29, "First open source ChatGPT has arrived". This is unncessary hype. The released code is just the model, no weights, no datasets used to trained the model, no inference model for deployment, no conversational UI/Web. A lot of things are not ready. This is far from calling it the "first" open source ChatGPT. People are getting ahead of themselves. -->
-    
-    News (2022-12-31): [There's now an open source alternative to ChatGPT, but good luck running it](https://techcrunch.com/2022/12/30/theres-now-an-open-source-alternative-to-chatgpt-but-good-luck-running-it/) - My comments: No it hasn't. This is NOT an actual trained model (no weights) you can use. This is just code for training a ChatGPT-like model. Furthermore, the training data (enwik8) is small.
-
-    CarperAI's large scale RLHF-aligned model (TRLX) train with LAION's data is coming out early next year. (Source: [Tweet](https://twitter.com/carperai/status/1608253659628068864?s=20))
-
-- [allenai/RL4LMs](https://github.com/allenai/RL4LMs) - RL for language models (RL4LMs) by Allen AI. It's a modular RL library to fine-tune language models to human preferences.
-- [GPT-JT](https://www.together.xyz/blog/releasing-v1-of-gpt-jt-powered-by-open-source-ai) - GPT-JT (6B) is a variant forked off GPT-J (6B), and performs exceptionally well on text classification and other tasks. On classification benchmarks such as RAFT, it comes close to state-of-the-art models that are much larger (e.g., InstructGPT davinci v2)!
-- LEAM (Large European AI Models) - The EU planning to fund the development of a large-scale ChatGPT-like model. [[website](https://leam.ai/), [project documents (English, PDF)](https://leam.ai/wp-content/uploads/2022/04/LEAM_Teaser_EN_01.pdf), [concept paper (German, PDF)](https://leam.ai/wp-content/uploads/2022/06/LEAM-Konzeptpapier-V1.2-1.pdf)]
-- [/r/AiCrowdFund](https://old.reddit.com/r/AiCrowdFund/comments/10a2g6v/lets_create_a_place_where_people_can_find_a_way/) - A place just started (2023) where people can find a way to crowd fund (with GPUs) a large AI. I'm not sure whether they've seen [Petals](https://petals.ml/) where you can run LLMs at home, BitTorrent‑style (federated learning?). It seems to be headed in that direction.
-- [Open source solution replicates ChatGPT training process](https://www.hpc-ai.tech/blog/colossal-ai-chatgpt) - They presents an open-source low-cost ChatGPT equivalent implementation process, including:
-    - A mini demo training process for users to play around, which requires only 1.62GB of GPU memory and would possibly be achieved on a single consumer-grade GPU, with up to 10.3x growth in model capacity on one GPU.
-    - An open-source complete PyTorch-based ChatGPT equivalent implementation process.
-    - Compared to the original PyTorch, single-machine training process can be 7.73 times faster and single-GPU inference can be 1.42 times faster.
-    - GitHub Repo: https://github.com/hpcaitech/ColossalAI
-
-    I got the impression that the point of the article was to plug their [Colossal-AI](https://colossalai.org/) framework and product, a collection of parallel components, tools, and hardwares for large models. Frankly, their numbers do look suspicious to me, unless I've missed something.
-    What makes ChatGPT interesting (over GPT-3) is the RLHF process. They do claim to replicate RLHF process completely. But, the article touch lightly about their RLHF implementation. They train RLHF using a small [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts) as example dataset. Their RLHF implementation details are hidden here: https://github.com/hpcaitech/ColossalAI/blob/main/applications/ChatGPT. Lack of demo doesn't inspire too much confidence though.
-- [FlexGen](https://github.com/Ying1123/FlexGen) - Running LLMs like OPT-175B/GPT-3 on a single GPU (e.g., a 16GB T4 or a 24GB RTX3090 gaming card). Key features: 1) up to 100x faster than other offloading systems. **2) Compress both the parameters and attention cache of models down to 4 bits with negligible accuracy loss.** 3) Distributed pipeline parallelism. They also provide a Python script and instructions that you can [run a chatbot with OPT models](https://github.com/Ying1123/FlexGen#run-chatbot-with-opt-models-on-a-single-gpu). This should solve the challenges of high computational and memory requirements of LLM inference. The chatbot they build with FlexGen and OPT models is not instruction-tuned (RLHF). So this chatbot is not ChatGPT-like though. [[Paper](https://github.com/FMInference/FlexGen/blob/0342e2a0e93593b2c11f84be0e9f5d5bcb73e598/docs/paper.pdf)]
-    - Runtime breakdown from their paper:
-        - Faster than DeepSpeed offloading (Table 2. Generation throughput on 1 GPU = 1.12 token/s (using 4-bit compression))
-    - FlexGen achieves super-linear scaling on decoding throughput (which only counts decoding time costs assuming the prefill is done). This means if we generate more tokens, pipeline parallelism will show its benefits as decoding time will dominate.
-    
-    Reviews (from Tweets):
-    - [How does it fair?](https://twitter.com/main_horse/status/1627862771609239552)
-    - [I have been successful in running OPT-66B](https://twitter.com/abacaj/status/1628252688562388995?s=20)
-
-See [cedrickchee/awesome-transformer-nlp](https://github.com/cedrickchee/awesome-transformer-nlp#transformer-reinforcement-learning) for more info.
-
-## Browser Extensions
-
-Use ChatGPT anywhere.
-
-- [Chrome extension to access ChatGPT as a popup on any page](https://github.com/kazuki-sf/ChatGPT_Extension)
-- [ChatGPT for Google](https://github.com/wong2/chat-gpt-google-extension) - Chrome/Edge/Firefox extension to display ChatGPT response alongside Google Search results.
-- [ChatGPT Everywhere](https://github.com/gragland/chatgpt-everywhere) - Chrome extension that adds ChatGPT to every text box on the internet. ([demo](https://twitter.com/gabe_ragland/status/1599466486422470656))
-- [Chrome extension](https://github.com/kazuki-sf/ChatGPT_Extension) - A really simple Chrome Extension (manifest v3) that you can access OpenAI's ChatGPT from anywhere on the web.
-- [summarize.site](https://github.com/clmnin/summarize.site) - Chrome extension to summarize blogs and articles using ChatGPT.
-- [WebChatGPT](https://github.com/qunash/chatgpt-advanced) - ChatGPT with Internet access. A browser extension (Chrome and Firefos) that augments your ChatGPT prompts with relevant search results from the Web. (Remember, ChatGPT cannot access the Web and has limited knowledge of the world after 2021)
-- [XP1](https://xp1.dust.tt/) - GPT-based Assistant with access to your Tabs.
-- [ExtractGPT](https://airtable.com/shruPamX8OWa5tqdp) - A browser extension for scraping data from structured & unstructured pages.
-
-## Access ChatGPT From Other Platforms
-
-### Bots
-
-- [WhatsApp bot](https://github.com/danielgross/whatsapp-gpt)
-- [Go Telegram bot](https://github.com/m1guelpf/chatgpt-telegram) - Run your own GPTChat Telegram bot, with a single command.
-- [Twitter bot](https://github.com/transitive-bullshit/chatgpt-twitter-bot) powered by ChatGPT.
-- [ChatGPT ProBot](https://github.com/oceanlvr/ChatGPTBot) - A GitHub App. Type `/chatgpt` to chat with ChatGPTBot.
-- [Discord bot](https://github.com/Zero6992/chatGPT-discord-bot) - Integrate your own Discord bot using chatGPT.
-
-## Command-Line Interface (CLI) Tools
-
-- [chatgpt-conversation](https://github.com/platelminto/chatgpt-conversation) - Voice-based chatGPT.
-- [Shell GPT](https://github.com/TheR1D/shell_gpt) - A CLI productivity tool powered by OpenAI's text-davinci-003 model, will help you accomplish your tasks faster and more efficiently.
-
-### Editors and IDEs
-
-- [VSCode extension](https://github.com/mpociot/chatgpt-vscode) ([demo](https://twitter.com/marcelpociot/status/1599180144551526400))
-- [ETC (ExplainThisCode)](https://github.com/evyatar9/ExplainThisCode) - A VSCode extension that uses the ChatGPT API to provide explanations for selected code.
-- [Adrenaline](https://github.com/shobrook/adrenaline) - Minimalist IDE that automatically fixes your code when it throws an error, powered by ChatGPT. [[article](https://devpost.com/software/adrenaline-ide)]
-
-### Others
-
-- [RayCast Extension (unofficial)](https://github.com/abielzulio/chatgpt-raycast) - Run ChatGPT through Raycast extension.
-- [Google Docs](https://github.com/cesarhuret/docGPT) - ChatGPT directly within Google Docs as an Editor Add-on.
-- [GPT Index](https://gpt-index.readthedocs.io/en/latest/guides/primer.html) contains a toolkit of index data structures designed to easily connect LLM's with your external data.
-
-## Applications
-
-Web applications.
-
-- [ShareGPT](https://sharegpt.com/) - A web app for sharing your wildest ChatGPT conversations with one click. ([demo](https://twitter.com/steventey/status/1599816553490366464))
-- [LearnGPT](https://www.learngpt.com/) - Share ChatGPT examples. See the best voted examples. Their goal is to create a resource for anyone who wants to learn more about ChatGPT.
-- [ShowGPT](https://showgpt.co/) - Show your ChatGPT prompts.
-- [The search engine for developers](https://beta.sayhello.so/), powered by large, proprietary AI language models.
-- [GPTDuck](https://www.gptduck.com/) – Ask questions about any GitHub repo.
-- [LLM Garden](https://github.com/ianb/llm-garden) - A number of experiments using GPT-3, delivered in a web app.
-
-Desktop applications.
-
-- [ChatGPT desktop app](https://github.com/sonnylazuardi/chatgpt-desktop) - Windows/MacOS desktop menubar app using Tauri and Rust.
-- [chatgpt-mac](https://github.com/vincelwt/chatgpt-mac): MacOS menubar app.
-- [ChatGPT Desktop Application](https://github.com/lencx/ChatGPT) for Mac, Windows and Linux - Build using Rust and Tauri.
-
-## Infrastructure
-
-- [Cost of ChatGPT](https://twitter.com/tomgoldsteincs/status/1600196981955100694) - Average cost is probably single-digits cents per chat.
-
-## Newsletters
-
-- [Newsletter of notes focusing on text generation, mostly with GPT-3](https://github.com/sw-yx/ai-notes/blob/main/TEXT.md)
-- [Ben's Bites - the AI newsletter](https://www.bensbites.co/p/looking-back-llms) - Looking back on LLMs.
-
-## AI Safety and Ethics
-
-AI alignment and AI interpretability.
-
-- [Use of ChatGPT generated text for posts on Stack Overflow is temporarily banned](http://archive.today/bMruL)
-- [Generative AI: autocomplete for everything](https://noahpinion.substack.com/p/generative-ai-autocomplete-for-everything) — A long-form piece on the future of human work in the age of generative AI. tl;dr: AI doesn't take over jobs, it takes over tasks. [Comparative advantage](https://en.wikipedia.org/wiki/Comparative_advantage) is why humans will still have jobs.
-
-### AGI and Humanity
-
-- [AI for the Next Era](https://greylock.com/greymatter/sam-altman-ai-for-the-next-era/) - OpenAI's Sam Altman on the New Frontiers of AI.
-  
-  My comments: Reading this after the ChatGPT launch, mostly all the things that Sam is referring to in the interview contains reminiscences about predictions on AI and development from Ray Kurzweil.
-- [Google won't launch ChatGPT rival because of 'reputational risk'](https://www.theverge.com/2022/12/14/23508756/google-vs-chatgpt-ai-replace-search-reputational-risk)
-- [AI Alignment Forum](https://www.alignmentforum.org/) is a single online hub for researchers to discuss all ideas related to ensuring that transformatively powerful AIs are aligned with human values. Discussion ranges from technical models of agency to the strategic landscape, and everything in between.
-- [The Expanding Dark Forest and Generative AI](https://maggieappleton.com/ai-dark-forest) by Maggie Appleton - Proving you're a human on a web flooded with generative AI content.
-- [How should AI systems behave, and who should decide?](https://openai.com/blog/how-should-ai-systems-behave/) by OpenAI.
-
-### Tweets
-
-> ChatGPT is incredibly limited, but good enough at some things to create a misleading impression of greatness.
->
-> It's a mistake to be relying on it for anything important right now. It's a preview of progress; we have lots of work to do on robustness and truthfulness.
->
-> fun creative inspiration; great! reliance for factual queries; not such a good idea. — [Sam Altman, OpenAI](https://twitter.com/sama/status/1601731295792414720)
-
-[News covering to that Tweet](https://venturebeat.com/ai/openai-ceo-admits-chatgpt-risks-what-now-the-ai-beat/).
-
-### Applications and Tools
-
-- GPT-2 Output Detector [[code](https://github.com/openai/gpt-2-output-dataset/tree/master/detector)] [[demo](https://huggingface.co/openai-detector/)]
-  > The @HuggingFace GPT detector works very well on ChatGPT-created text. I ran 5 student essays and 5 ChatGPT essays for the same prompt through it, and it was correct every time with >99.9% confidence. — [@cfiesler](https://twitter.com/cfiesler/status/1601642370797563904)
-- [OpenAI's attempts to watermark AI text hit limits](https://archive.vn/20221212144831/https://techcrunch.com/2022/12/10/openais-attempts-to-watermark-ai-text-hit-limits/) - Watermarking may allow for detection of AI text. This post discusses some of the limitations but suggests that it's worth pursuing. Prof. Scott Aaronson "expressed the belief that, if OpenAI can demonstrate that watermarking works and doesn't impact the quality of the generated text, it has the potential to become an industry standard.". OpenAI engineer Hendrik Kirchner built a working prototype.
-    - Related: [Scott Aaronson talks AI Safety on Nov 2022 (video)](https://youtu.be/fc-cHk9yFpg?t=3194) - GPT outputs will be statistically watermarked with a secret signal that you can use to proof the outputs came from GPT, making it much harder to take a GPT output and pass it off as if it came from a human. How it works, it selects the tokens pseudorandomly using cryptographic PRNG that secretly biases a certain score which you can also compute if you know the key for this PRNG. Scott doesn’t give too many details about how it works and he admits this can be defeated with enough effort, for example by using one AI to paraphrase another. But if you just insert or delete a few words or rearrange the order of some sentences, the signal will still be there. So it's robust against those sorts of interventions. Many suspect its possible to bypass using a clever decoding strategy. Scott is also researching: [Planting Undetectable Backdoors in Machine Learning Models (2022 paper)](https://arxiv.org/abs/2204.06974)". People are questioning whether they are missing something, or are all these attempts at recognising LLM outputs obviously destined to fail?
-    I think they've clearly thought about this but still think this is useful (from transcript of the lecture: https://scottaaronson.blog/?p=6823).
-- [GPTZero](https://gptzero.me/) - An app that can quickly and efficiently detect whether an essay is ChatGPT or human written. [[Case study (exploring false positives)](https://gonzoknows.com/posts/GPTZero-Case-Study/), [Tweet](https://twitter.com/edward_the6/status/1610067688449007618)] <!-- retired version of the GPTZero beta: https://etedward-gptzero-main-zqgfwb.streamlit.app/ -->
-- [A Watermark for Large Language Models (paper)](https://arxiv.org/abs/2301.10226) by University of Maryland (2023). It operates by maintaining a "whitelist" and "blacklist" of high-log probability words. [[Tweet (explainer thread by one of the authors)](https://twitter.com/tomgoldsteincs/status/1618287665006403585), [code](https://github.com/jwkirchenbauer/lm-watermarking)]
-    - They test the watermark using a LLM from the Open Pretrained Transformer (OPT) family, and discuss robustness and security.
-- DetectGPT - Zero-Shot machine-generated text detection using probability curvature. [[paper (2023), code, demo, and Twitter thread](https://ericmitchell.ai/detectgpt/)]
-    - Method: language model output will minimize log-probability in token space. Because of this, to detect if text is generated by a language model, "perturb" the phrase slightly and measure the curvature in log-probability.
-- [New AI classifier for indicating AI-written text](https://openai.com/blog/new-ai-classifier-for-indicating-ai-written-text/) by OpenAI. [[try the classifier](https://platform.openai.com/ai-text-classifier)]
-    - Results: correctly flags AI-generated text 26% of the time, incorrectly flags human-generated text 9% of the time.
-
-## LMOps
-
-General technology for enabling AI capabilities with LLMs and generative AI models.
-
-- [Structured Prompting: Scaling In-Context Learning to 1,000 Examples (paper)](https://arxiv.org/abs/2212.06713) by Microsoft Research. [[Code](https://github.com/microsoft/LMOps)]
-  > GPT-3/LLMs' Achilles heel is short context length - how many "in-context" examples they can consume to learn a new task.
-  > Enter "Structured Prompting": scale your examples from dozens => 1,000+
-  > — [@mathemagic1an](https://twitter.com/mathemagic1an/status/1604802787296284674)
-
-## Emerging Software Development and Business Paradigm
-
-[Software 2.0](https://karpathy.medium.com/software-2-0-a64152b37c35)? [Software 3.0?](https://twitter.com/karpathy/status/1273788774422441984) Generative AI?
-
-(_Reflections on how best to think of the current state of software engineering, AI products, and pitfalls people tend to make with new tech._)
-
-It's very rare to see a new building block emerge in computing. Large AI models like ChatGPT represent a fundamentally new building block. By integrating large models into software, developers can expose functionality that wouldn't be possible otherwise. <!-- rephrase: LLMs are emerging as a transformative tech, enabling developers to build apps that they previously could not. -->
-This may be one of the biggest changes in software we've ever seen — a new type of software.
-
-Using LLMs in isolation is often not enough to create a powerful app — the real power comes when you are able to combine them with other sources of knowledge or computation.
-
-**Is Software 3.0 silly? worth the hype?**
-
-I don't know. I think of "Software 3.0" as:
-- a metaphor for the new trends in software development and large AI models
-- a different paradigm; companies leverage customer data to train their proprietary AI models and optimize product experiences and customers receive added value from the product.
-
-You say investment into generative AI companies is way too exuberant right now? <!-- someone estimated there are less than NNN people in the world right now who know how to effectively train billion+ parameter models with startup resources. --> <!-- someone predict: that will be a myth of the past and within the year, the knowledge will become accessible. -->
-[What's the big deal with Generative AI? Is it the future or the present?](https://txt.cohere.ai/generative-ai-future-or-present/)
-
-> 1- Recent AI developments are awe-inspiring and promise to change the world. But when?
->
-> 2- Make a distinction between impressive 🍒 cherry-picked demos, and reliable use cases that are ready for the marketplace
->
-> 3- Think of models as components of intelligent systems, not minds
->
-> 4- Generative AI alone is only the tip of the iceberg
-
----
-
-## Demos
-
-Demos[^3] and examples in the form of tweets:
-
-**Day 1, 2022**
-
-1. [Generating detailed prompts for text-to-image models like MidJourney & Stable Diffusion](https://twitter.com/guyp/status/1598020781065527296)
-2. [ChatGPT outperforming Google search](https://twitter.com/jdjkelly/status/1598021488795586561)
-3. [Generating code for automated RPA, e.g. automating the click sequence for house search in Redfin](https://twitter.com/theaievangelist/status/1599579579064406017)
-4. [Generating on-demand code contribution ideas for an about-to-be-fired Twitter employee](https://twitter.com/goodside/status/1599082185402642432)
-5. [An app builder such as essay automatic summarization](https://twitter.com/packym/status/1598405769669771264)
-6. [Personal trainer and nutritionist: Generating a weight loss plan, complete with calorie targets, meal plans, a grocery list, and a workout plan](https://twitter.com/anothercohen/status/1599531037570502656)
-7. [Building a virtual machine inside ChatGPT](https://twitter.com/stspanho/status/1599367959029288960)
-8. [Code debugging partner: explains and fixes bugs](https://twitter.com/amasad/status/1598042665375105024)
-
-<details>
-<summary>See more</summary>
-
-9. [Generating programmatic astrophoto processing by detecting constellations in an image](https://twitter.com/RReverser/status/1599180092621611008)
-10. [VSCode extension that allows using ChatGPT within the context of a code](https://twitter.com/marcelpociot/status/1599180144551526400)
-11. [Building web AR scenes by using text commands](https://twitter.com/stspanho/status/1599367959029288960)
-12. [Stringing cloud services to perform complex tasks](https://twitter.com/amasad/status/1598089698534395924)
-13. [Generating legal contracts](https://twitter.com/atri_life/status/1599506327461859328)
-14. [A Chrome extension that presents ChatGPT results next to Google Search](https://twitter.com/zohaibahmed/status/1599191505025261569)
-15. [Solving complex coding questions - the end of LeetCode?](https://twitter.com/goodside/status/1598129631609380864)
-16. [Solving complex academic assignments - the end of Chegg?](https://twitter.com/abhnvx/status/1598258353196929024)
-17. [Answering unanswered Stack Overflow questions - the end of Stack Overflow?](https://twitter.com/htmleverything/status/1599443014153224193)
-18. [Explaining complex regex without any context](https://twitter.com/jwblackwell/status/1598090447854792705)
-19. [Generating hallucinated chat with a hallucinated person in a hallucinated chat room](https://twitter.com/gfodor/status/1599220837999345664) 
-20. [Bypassing OpenAI's restrictions by disclosing ChatGPT's belief system](https://twitter.com/zoink/status/1599281052115034113)
-21. [Uncovering ChatGPT's opinion of humans including a detailed destruction plan](https://twitter.com/michlbrmly/status/1599168681711656961)
-22. [An insightful executive summary of ChatGPT](https://twitter.com/swyx/status/1599189032529178624)
-23. [Building e-commerce websites: stitching ChatGPT & Node script to automatically generate SEO-driven blog posts using GPT 3](https://twitter.com/giladrom/status/1599617326290468864)
-24. [A ChatGPT extension that generates text, tweets, stories, and more for every website](https://twitter.com/gabe_ragland/status/1599466486422470656)
-25. [An extension that adds "Generate PNG" and "Export PDF" functions to ChatGPT's interface](https://twitter.com/liadyosef/status/1599484187396145153)
-26. [A thread showcasing ways of helping hackers by using ChatGPT](https://twitter.com/maikroservice/status/1599525095675789312)
-27. [Generating editorial pieces like sports articles](https://twitter.com/geovedi/status/1599572163799183360)
-28. [Generating SEO titles to optimize sites Click Through Rate](https://twitter.com/tejas3732/status/1599094776292573184)
-29. [Creating social games. E.g. guess which city is featured in a picture](https://twitter.com/xf1280/status/1599252728399921152)
-30. [A tutorial on how to use ChatGPT to create a wrapper R package](https://twitter.com/IsinAltinkaya/status/1599440535529623552)
-31. [ChatGPT can basically just generate AI art prompts. I asked a one-line question, and typed the answers verbatim straight into MidJourney and boom. Times are getting weird...](https://twitter.com/GuyP/status/1598020781065527296?t=5V4Pz3yUYhKngQnXc9-0Yw&s=09)
-32. [A collection of wrong and failed results from ChatGPT](https://twitter.com/itstimconnors/status/1599544717943123969?t=azJqOxHvU9wfTNLoPaYGqg&s=09)
-33. [Use the AWS TypeScript CDK to configure cloud infrastructure on AWS](https://twitter.com/jaredpalmer/status/1599459951415480320?t=rDn6KwMRV8wLepe_3-SK9A&s=09)
-34. [Seeing people trick ChatGPT into getting around the restrictions OpenAI placed on usage is like watching an Asimov novel come to life](https://nitter.fly.dev/carnage4life/status/1598332648723976193)
-35. [Never ever write a job description again](https://twitter.com/rakyll/status/1599208818529177600)
-36. [ChatGPT is getting pretty close to replicating the Stack Overflow community already](https://twitter.com/KSakarisson/status/1599440565673656320)
-37. [That's how I'll pick books in the future](https://twitter.com/thorstenball/status/1599320310171414528)
-38. [ChatGPT is amazing but OpenAI has not come close to addressing the problem of bias. Filters appear to be bypassed with simple tricks, and superficially masked](https://twitter.com/spiantado/status/1599462375887114240)
-39. [i'm the ai now](https://twitter.com/parafactual/status/1598212029479026689)
-40. [All the ways to get around ChatGPT's safeguards](https://twitter.com/davisblalock/status/1602600453555961856)
-
-**2023**
-
-1. [Programming with ChatGPT. Some observations](http://archive.today/XLVZf)
-2. [The best ways to use ChatGPT. 8 ways ChatGPT can save you thousands of hours in 2023](https://archive.ph/G3Ak3)
-3. [Everyone’s using ChatGPT. Almost everyone's STUCK in beginner mode. 10 techniques to get massively ahead with AI (cut-and-paste these prompts)](https://threadreaderapp.com/thread/1610316022174683136.html)
-4. [David Guetta uses ChatGPT and uberduck.ai to deepfake Eminem rap for DJ set](https://twitter.com/davidguetta/status/1621605376733872129)
-
-</details>
-
-## Others
-
-Mostly found in GitHub Gist:
-
-- https://gist.github.com/Gaelan/cf5ae4a1e9d8d64cb0b732cf3a38e04a - ChatGPT passes the 2022 AP Computer Science A free response section
-- https://gist.github.com/memo/dcd0ccbfe57d1fd5f1601e4ee2149a73
-  > A conversation I had with ChatGPT, inspired by a [tweet](https://twitter.com/michael_nielsen/status/1598760649039179777) from Michael Nielson.
-- https://gist.github.com/kettle11/dae31bee4fc8aa401135def2aa3f4a47
-  > You are Webby, a website creation assistant.
-- https://gist.github.com/GlenCrawford/693800ae361e2db255ed29d7d284c5e5 - reinteractive blog post: An interview with an AI about Ruby on Rails
-- https://gist.github.com/heyajulia/fc4286b125fa99fd166a50f3582f2514
-  > Hi, my code has two bugs and I’m not sure how to fix them. If you can help me, I’ll send you the code.
-
-### ChatGPT Alternatives
-
-- [Perplexity](https://www.perplexity.ai/) - A new search interface that uses OpenAI GPT 3.5 and Microsoft Bing to directly answer any question you ask.
-- Bart from Google
-- Sparrow from DeepMind
-- YouChat
-- Poe from Quora
-- Bloom from BigScience
-- Character AI
-- Jasper Chat
-- [Phind](https://phind.com/) - An "assistant" that simply tells users what the answer is. Optimized for developers and technical questions. Powered by proprietary LLMs (they use OpenAI API and their own models). It's strange that they market themself as search engine.
-
-Lightly based on [publicly announced ChatGPT variants and competitors](https://twitter.com/goodside/status/1606611869661384706) Tweet.
-
-<!-- For future reference but maybe not. -->
-
-[^1]: https://github.com/humanloop/awesome-chatgpt
-[^2]: https://github.com/Kamigami55/awesome-chatgpt
-[^3]: https://github.com/saharmor/awesome-chatgpt
-[^5]: In a [Reddit thread "The problem with prompt engineering"](https://r.nf/r/GPT3/comments/m177n2/the_problem_with_prompt_engineering/gqdr6de/?context=3) where Gwern (author) claims to be the origin of the term [prompt programing/prompt engineering](https://gwern.net/gpt-3#prompts-as-programming). His argument is reasonable and well written.
-
-## License
-
-I am providing code and resources in this repository to you under an open source license.  Because this is my personal repository, the license you receive to my code and resources is from me and not my employer.
-
-* Code: [MIT](LICENSE) Copyright Cedric Chee
-* Text content: [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](http://creativecommons.org/licenses/by-sa/4.0/)
