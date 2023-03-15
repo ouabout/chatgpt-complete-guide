@@ -52,9 +52,9 @@ Example prompts.
 - [ChatGPT cheat sheet (PDF)](https://drive.google.com/file/d/1UOfN0iB_A0rEGYc2CbYnpIF44FupQn2I/view)
 
 ## Github Projects
-- [DocsGPT] (https://github.com/arc53/DocsGPT) - Create your custom data chatbot
-- [document.ai] (https://github.com/GanymedeNil/document.ai) - Vector-based data store custom source GPT chatbot
-- [OpenGPT] (https://github.com/futantan/OpenGpt) - Create your own chatgpt application in seconds 
+- [DocsGPT](https://github.com/arc53/DocsGPT) - Create your custom data chatbot
+- [document.ai](https://github.com/GanymedeNil/document.ai) - Vector-based data store custom source GPT chatbot
+- [OpenGPT](https://github.com/futantan/OpenGpt) - Create your own chatgpt application in seconds 
 - [golergka/advent-of-code-2022-with-chat-gpt](https://github.com/golergka/advent-of-code-2022-with-chat-gpt) - Solving Advent of Code 2022 with ChatGPT.
 - [max-sixty/aoc-gpt](https://github.com/max-sixty/aoc-gpt) - First place in Advent of Code leaderboard with GPT-3.
 - [greshake/Alice](https://github.com/greshake/Alice) - Giving ChatGPT access to a real terminal.
